@@ -71,4 +71,57 @@ def calculBrutEnNet(salaireBrut, isPublic):
         salaireNet = salaireBrut - (salaireBrut / (23 / 100))
     #Retourner salaireNet
     return(salaireNet)
+
+#def input():
+    #On attribu à une variable un caractere de type string
+
+input('a')
+#"Exercice:
+#"Faire un mini jeu qui affiche un message lorsque input renvoie le bon caractère
+#"le caractere doit être paramétrable
+
+#definir une variable x qui sera le caractère paramétrable
+# x = 'h'"
+#definir une variable y vide qui servira de réceptacle à la variable aléatoire
+# y = ''"
+#definir une fonction qui fera des boucles jusqu'à ce que x et y soient le même caractère à l'aide de la fonction input qui changera constamment avec une variable z qui sera le compteur et qui commencera nécessairement avec la valeur 0
+# def miniJeu(x,y, z=0):"
+    #tant que x n'est pas égal à y
+    # while x!=y :"
+        #nous rajoutons un au compteur z puis relançons la fonction input et nous poursuivons la boucle
+        # z = z+1"
+        # y= input()"
+    #retourner le message de la victoire 
+    # return("VICTOIRE !!! et le nombre de fois qui fut nécessaire à obtenir la victoire est ", z)
+
+#definir une variable x qui sera le caractère paramétrable
+x = 'h'
+#definir une variable y vide qui servira de réceptacle à la variable aléatoire
+y = ''
+#definir une variable z qui sert de compteur
+z = 0
+#definir une fonction qui fera des boucles jusqu'à ce que x et y soient le même caractère à l'aide de la fonction input qui changera constamment avec une variable z qui sera le compteur
+def miniJeu(x,y, z):
+    #si x n'est pas égal à y
+    if x != y :
+        #alors nous rajoutons un compteur à z puis nous éxécutons la fonction input puis l'attribuons à y et nous rappelons la fonction miniJeu
+        z = z+1
+        input()
+        miniJeu(x,y,z)
+    #sinon
+    else :
+        #Retourner le méssage de victoire absolu
+        return("VICTOIRE")
+
+# ex1
+prenom = "Hugo"
+nom = "XIA"
+def identite(nom,prenom):
+    return(nom + ',' +prenom)
+
+# ex2
+liste = [0,0,0,1,1,1]
+def 
+# ex3
+print("bonjour")
 #FIN

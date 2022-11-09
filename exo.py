@@ -123,21 +123,6 @@ def concatWithComma(nom=str,prenom=str):
     #Retourner le nom avec le prenom séparer par une virgule
     return(nom + ',' +prenom)
 
-# ex2 de moi
-#definir une variable tableau qui contiendra des 0 et des 1
-liste = [0,0,0,1,1,1]
-#definir une fonction qui prends en paramètre une liste x et une valeur qui est soit 0 soit 1 ainsi qu'une liste vide nommée vide, qui permettra de parcourir une liste et savoir ou se trouve soit les 0 soit les 1
-def ou(x,y, vide=[]):
-    #definir i qui sera l'index de départ
-    i=0
-    #Rajouter une boucle qui parcourera la liste avec qui u qui prendra la valeur de x
-    while (i != len(x)):
-        #si i est égal à y
-        if i == y:
-            #alors nous importerons l'index de x à la liste "vide"
-            vide.import(i)
-    #Lorsque la boucle est fini alors nous allons montrer l'index de chaque 0 ou 1
-    return(vide)
 # Ex2
 tableau = [0,1,1,1,0,1,1,0,1]
 # definir la fonction findIndex qui itere sur le tableau, cherchant l'index
@@ -147,20 +132,28 @@ def findIndex(tableau, x):
     i=0
     # definir chaineRetour telle qu'une chaine de caractere vide
     chaineRetour = ""
+    #Je definis un booleen tel que firstTurn est true
+    firstTurn = True
     # tant que i est different du nombre elt dans le tableau
     while i != len(tableau) :
         #Alors j'attribue a une variable la valeur de tableau a l'index 1
         selected = tableau[i]
-        # j'incremente i de 1
-        i = i+1
-        # si selected est egal à x
-        if selected == x:
+        # si selected est egal à x et que First turn est true
+        if selected == x  and firstTurn == True:
+            #Alors on assigne a chaineRetour le retour de str(i)
+            chaineRetour = str(i)
+            # changer la valeur de firstTurn à false
+            firstTurn = False    
+        #sinon selected est egal à x
+        else :
             # alors j'assigne le retour de concatWithComma tel que concatWithComma(chaineRetour, i) à chaineRetour
             return(concatWithComma(chaineRetour, i))
+        # j'incremente i de 1
+        i = i+1
     #Retourner la chaine retour
     return(chaineRetour)
 
-
+#EX fibonacci
 
 # ex3       
 print("bonjour")

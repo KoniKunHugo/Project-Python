@@ -202,6 +202,16 @@ def fibonacci(x,y, liste=[]):
     def conway(x):
         terrain = []
 
+def generateTable(L):
+    return[[(str(x) + '_' + str(y)) for x in range(L)] for y in range(L)]
+
+def displayTable(table):
+    for i in table:
+        print(i)
+
+conwayBoard = generateTable(5)
+
+displayTable(conwayBoard)
 
 # ex3       
 print("bonjour")

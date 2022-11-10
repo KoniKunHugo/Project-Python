@@ -171,18 +171,37 @@ def findIndex(tableau, x):
     return(chaineRetour)
 
 #EX fibonacci
-#Definir une fonction Fibonacci qui prends en paramètre x qui est la deuxième valeur dans fibonacci et y qui est le nombre d'occurences
-#Definir une variable z qui a pour valeur 0
-#Definir une variable retour
-#Tant que y est strictement supérieur à 0
-    #Alors Si z est inférieur à x
-        #alors retour est égal au résultat de l'addition z et x
-        #afficher retour
-        #assigner à z la valeur de retour
-    #sinon
-        #alors retour est égal à l'addition de z + x
-        #afficher retour
-        #assigner à x la valeur de retour
+#Definir une fonction Fibonacci qui prends en paramètre x qui est la deuxième valeur dans fibonacci et y qui est le nombre d'occurences ainsi qu'une liste vide
+def fibonacci(x,y, liste=[]):
+    #Definir une variable z qui a pour valeur 0
+    z = 0
+    #Definir une variable retour
+    retour = 0
+    #Tant que y est strictement supérieur à 0
+    while y > 0 :
+        #Alors Si z est inférieur à x
+        if z < x :
+            #alors retour est égal au résultat de l'addition z et x
+            retour = z + x
+            #afficher retour
+            liste.append(retour)
+            #assigner à z la valeur de retour
+            z = retour
+        #sinon
+        else :
+            #alors retour est égal à l'addition de z + x
+            retour = z + x
+            #afficher retour
+            liste.append(retour)
+            #assigner à x la valeur de retour
+            x = retour
+    return(liste)
+
+    #EX conway
+    
+    def conway(x):
+        terrain = []
+
 
 # ex3       
 print("bonjour")

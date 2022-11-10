@@ -113,6 +113,23 @@ def miniJeu(x,y, z):
         #Retourner le méssage de victoire absolu
         return("VICTOIRE")
 
+#Shifumi
+#On admet que les fonctions input et random éxistent
+#Definir une fonction Shifumi
+#Definir une variable x qui sera le retour d'input qui sera donc soit papier soit pierre soit ciseaux
+#Lancer le paramètre aléatoire qui tirera le choix du CPU parmi ciseaux, pierre et feuille et lui attribue la valeur y
+#Si x est égal à y
+    #Alors retourner "égalité"
+#Sinon si x est égal à "pierre" et y est égal à "feuille"
+    #alors retourner "défaite"
+#Sinon si x est égal à "feuille" et y est égal à "pierre"
+    #alors retourner "victoire"
+#Sinon si x est égal à "ciseaux" et y est égal à "pierre"
+    #alors retourner "defaite"
+#Sinon si x est égal à "pierre" et y est égal à "ciseaux"
+    #alors retourner "victoire"
+#Sinon retourner "erreur"
+
 # ex1
 #definir une variable prenom
 prenom = "Hugo"
@@ -154,6 +171,18 @@ def findIndex(tableau, x):
     return(chaineRetour)
 
 #EX fibonacci
+#Definir une fonction Fibonacci qui prends en paramètre x qui est la deuxième valeur dans fibonacci et y qui est le nombre d'occurences
+#Definir une variable z qui a pour valeur 0
+#Definir une variable retour
+#Tant que y est strictement supérieur à 0
+    #Alors Si z est inférieur à x
+        #alors retour est égal au résultat de l'addition z et x
+        #afficher retour
+        #assigner à z la valeur de retour
+    #sinon
+        #alors retour est égal à l'addition de z + x
+        #afficher retour
+        #assigner à x la valeur de retour
 
 # ex3       
 print("bonjour")

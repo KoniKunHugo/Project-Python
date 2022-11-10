@@ -1,0 +1,38 @@
+#Debut
+
+#On admet une fonction random qui retourne une valeur aléatoire parmi la liste donnée
+#On admet une fonction input qui demande à l'utilisateur une valeur et qui la retourne
+#Definir une fonction Shifumi
+    #Definir une variable scoreJoueur qui sera le compteur de victoire du joueur
+    #Definir une variable scoreCPU qui sera le compteur de victoire du CPU
+    #Definir un tableau qui contiendra les choix du CPU : pierre, ciseaux, feuille
+    #Tant que ScoreCPU < 3 ou ScoreJoueur < 3 
+        #Alors Definir une variable x qui récupèrera le retour de ll'éxécution input qui aura comme valeur soit papier soit pierre soit ciseaux
+        #Éxécuter la fonction aléatoire et assigner à y le retour de la fonction aléatoire qui tirera le choix du CPU parmi ciseaux, pierre et feuille et
+        #Si x est égal à y
+            #Alors afficher "égalité"
+        #Sinon si x est égal à "pierre" et y est égal à "feuille"
+            #Alors afficher "défaite"
+            #Imcrémenter à ScoreCPU 1
+        #Sinon si x est égal à "feuille" et y est égal à "pierre"
+            #Alors afficher "victoire"
+            #Imcrémenter à ScoreJoueur 1
+        #Sinon si x est égal à "ciseaux" et y est égal à "pierre"
+            #Alors afficher "defaite"
+            #Imcrémenter à ScoreCPU 1
+        #Sinon si x est égal à "pierre" et y est égal à "ciseaux"
+            #Alors afficher "victoire"
+            #Imcrémenter à ScoreJoueur 1
+        #Sinon si x est égal à "ciseaux" et y est égal à "feuille"
+            #Alors afficher "victoire"
+            #Imcrémenter à ScoreJoueur 1
+        #Sinon si x est égal à "feuille" et y est égal à "ciseaux"
+            #Alors afficher "défaite"
+            #Imcrémenter à ScoreCPU 1
+        #Sinon afficher "erreur"
+    #Si ScoreCPU == 3
+        #Alors retourner "You lost, so bad bad"
+    #Sinon
+        #Alors retourner "You won, Conglaraturatation"
+
+#Fin

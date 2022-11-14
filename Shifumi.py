@@ -7,7 +7,7 @@ def aleatoire(x):
 
 
 #On admet une fonction input qui demande à l'utilisateur une valeur et qui la retourne
-def fuckInput():
+def mehInput():
   return (input("Que faîtes vous ? (pierre, ciseaux ou feuille) :"))
 
 
@@ -22,12 +22,11 @@ def shifumi():
   #Tant que ScoreCPU < 3 ou ScoreJoueur < 3
   while scoreCPU < 3 or scoreJoueur < 3:
     #Alors Definir une variable x qui récupèrera le retour de ll'éxécution input qui aura comme valeur soit papier soit pierre soit ciseaux
-    x = fuckInput()
+    x = mehInput()
     #Éxécuter la fonction aléatoire et assigner à y le retour de la fonction aléatoire qui tirera le choix du CPU parmi ciseaux, pierre et feuille
     y = aleatoire(choixCPU)
-    #Si x est égal à y
-    print(x)
     print(y)
+    #Si x est égal à y
     if x == y:
       #Alors afficher "égalité"
       print("Draw")

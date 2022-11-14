@@ -30,7 +30,7 @@
             #Alors afficher "défaite"
             #Imcrémenter à ScoreCPU 1
         #Sinon afficher "erreur"
-    #Si ScoreCPU == 3
+    #Si ScoreCPU est égal à 3
         #Alors retourner "You lost, so bad bad"
     #Sinon
         #Alors retourner "You won, Conglaraturatation"
